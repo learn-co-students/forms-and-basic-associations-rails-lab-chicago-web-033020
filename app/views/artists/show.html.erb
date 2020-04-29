@@ -1,2 +1,6 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<h1>Artist details:</h1>
+
+<p>Artist name: <%= @artist.name %></p>
+
+<p><%= link_to "Edit artist", edit_artist_path(@artist) %></p>
+<p><%= link_to "Back to all artists", artists_path %></p>
